@@ -20,7 +20,9 @@ elif [[ -n "$UNITY_SERIAL" ]]; then
   unity-editor \
     -logFile /dev/stdout \
     -quit \
-    -returnlicense
+    -returnlicense \
+    -username "$UNITY_EMAIL" \
+    -password "$UNITY_PASSWORD"
 fi
 
 # Return to previous working directory
